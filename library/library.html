@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="./library.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Library</h1>
+        <button id="newBookBtn">NEW BOOK</button>
+        <div id="bookList"></div>
+    </div>
+
+    <dialog id="bookDialog">
+        <form id="bookForm">
+            <h2>Add New Book</h2>
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="text" id="pages" placeholder="Number of Pages" required>
+            <label>
+                <input type="checkbox" id="read">
+                Have you read it?
+            </label>
+            <button type="submit">Add Book</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+        </form>
+    </dialog>
+
+    <script src="./library.js"></script>
+</body>
+</html>
